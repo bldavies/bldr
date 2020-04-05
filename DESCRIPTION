@@ -14,5 +14,6 @@ Encoding: UTF-8
 LazyData: true
 Suggests:
   dplyr,
+  igraph,
   sessioninfo
 RoxygenNote: 7.1.0
