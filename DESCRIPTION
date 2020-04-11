@@ -15,5 +15,6 @@ LazyData: true
 Suggests:
   dplyr,
   igraph,
-  sessioninfo
+  sessioninfo,
+  tidyselect
 RoxygenNote: 7.1.0
