@@ -3,6 +3,7 @@
 export(mat2df)
 export(mat2tbl)
 export(normalise_coocc)
+export(null2na)
 export(sample_ppm)
 export(save_session_info)
 export(sort_cols)
