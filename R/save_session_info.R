@@ -8,5 +8,5 @@
 #' @export
 save_session_info <- function(path = "session.log") {
   options(width = 80)
-  writeLines(capture.output(sessioninfo::session_info()), path)
+  writeLines(utils::capture.output(sessioninfo::session_info()), path)
 }

@@ -12,11 +12,11 @@
 #'
 #' @export
 sample_ppm <- function(memb, p, q, seed = NULL) {
-  mat <- t(combn(seq_along(memb), 2))
+  mat <- t(utils::combn(seq_along(memb), 2))
   prob <- c(q, p)[1 + (memb[mat[, 1]] == memb[mat[, 2]])]
   if (!is.null(seed)) {
     set.seed(seed)
   }
-  el <- mat[which(runif(nrow(mat)) < prob), ]
+  el <- mat[which(stats::runif(nrow(mat)) < prob), ]
   igraph::graph_from_edgelist(el, directed = FALSE)
 }
