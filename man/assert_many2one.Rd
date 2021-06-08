@@ -4,12 +4,15 @@
 \alias{assert_many2one}
 \title{Assert that data contain many-to-one map between columns}
 \usage{
-assert_many2one(.data, x, y)
+assert_many2one(.data, x, y, na.rm = T)
 }
 \arguments{
 \item{.data}{A data frame or tibble.}
 
-\item{x, y}{Columns intended to share a many-to-one map.}
+\item{x, y}{Columns intended to share a many-to-one map.'=}
+
+\item{na.rm}{Should NA values be ignored?
+Default is TRUE.}
 }
 \description{
 \code{assert_many2one} checks whether there is a many-to-one map between

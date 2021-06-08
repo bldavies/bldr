@@ -3,6 +3,8 @@
 export(assert_many2one)
 export(assert_one2one)
 export(get_directed_cycles)
+export(is_many2one)
+export(is_one2one)
 export(mat2df)
 export(mat2tbl)
 export(na2zero)

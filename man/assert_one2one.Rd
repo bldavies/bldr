@@ -4,15 +4,18 @@
 \alias{assert_one2one}
 \title{Assert that data contain one-to-one map between columns}
 \usage{
-assert_one2one(.data, x, y)
+assert_one2one(.data, x, y, na.rm = T)
 }
 \arguments{
 \item{.data}{A data frame or tibble.}
 
 \item{x, y}{Columns intended to share a one-to-one map.}
+
+\item{na.rm}{Should NA values be ignored?
+Default is TRUE.}
 }
 \description{
-\code{assert_many2one} checks whether there is a one-to-one map between
+\code{assert_one2one} checks whether there is a one-to-one map between
 two columns \code{x} and \code{y} of a data frame \code{.data}, raising an
 error if not and returning \code{.data} otherwise.
 }
