@@ -18,5 +18,5 @@ sample_ppm <- function(memb, p, q, seed = NULL) {
     set.seed(seed)
   }
   el <- mat[which(stats::runif(nrow(mat)) < prob), ]
-  igraph::graph_from_edgelist(el, directed = FALSE)
+  igraph::graph_from_data_frame(data.frame(el), directed = FALSE, vertices = seq_along(memb))
 }
