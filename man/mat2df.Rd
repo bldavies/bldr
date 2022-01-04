@@ -2,19 +2,20 @@
 % Please edit documentation in R/mat2df.R
 \name{mat2df}
 \alias{mat2df}
+\alias{mat2tbl}
 \title{Convert matrices to data frames}
 \usage{
 mat2df(mat, col.names = c("row", "col", "value"))
+
+mat2tbl(mat, col.names = c("row", "col", "value"))
 }
 \arguments{
 \item{mat}{Matrix to convert.}
 
-\item{col.names}{Data frame column names.
+\item{col.names}{Output column names.
 Defaults to \code{c("row", "col", "value")}.}
 }
 \description{
 \code{mat2df} converts a matrix \code{mat} to a data frame.
-}
-\seealso{
-\code{\link{mat2tbl}}
+  \code{mat2tbl} converts \code{mat} to a tibble.
 }

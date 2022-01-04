@@ -2,9 +2,12 @@
 % Please edit documentation in R/is_many2one.R
 \name{is_many2one}
 \alias{is_many2one}
-\title{Test for many-to-one correspondence between vectors}
+\alias{is_one2one}
+\title{Test for many-to-one or one-to-one map between vectors}
 \usage{
 is_many2one(x, y, na.rm = T)
+
+is_one2one(x, y, na.rm = T)
 }
 \arguments{
 \item{x, y}{Vectors of equal length.}
@@ -14,5 +17,6 @@ Default is TRUE.}
 }
 \description{
 \code{is_many2one} tests whether there is a many-to-one map from the values
-in a vector \code{x} to the corresponding values in a vector \code{y}.
+  in a vector \code{x} to the corresponding values in a vector \code{y}.
+  \code{is_one2one} tests for a one-to-one map.
 }

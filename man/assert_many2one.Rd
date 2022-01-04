@@ -2,20 +2,25 @@
 % Please edit documentation in R/assert_many2one.R
 \name{assert_many2one}
 \alias{assert_many2one}
-\title{Assert that data contain many-to-one map between columns}
+\alias{assert_one2one}
+\title{Assert that data contain many-to-one or one-to-one map between columns}
 \usage{
 assert_many2one(.data, x, y, na.rm = T)
+
+assert_one2one(.data, x, y, na.rm = T)
 }
 \arguments{
 \item{.data}{A data frame or tibble.}
 
-\item{x, y}{Columns intended to share a many-to-one map.'=}
+\item{x, y}{Columns intended to share a many-to-one or one-to-one map.}
 
 \item{na.rm}{Should NA values be ignored?
 Default is TRUE.}
 }
 \description{
 \code{assert_many2one} checks whether there is a many-to-one map between
-two columns \code{x} and \code{y} of a data frame \code{.data}, raising an
-error if not and returning \code{.data} otherwise.
+  two columns \code{x} and \code{y} of a data frame \code{.data}, raising an
+  error if not and returning \code{.data} otherwise.
+  \code{assert_one2one} checks for a one-to-one map.
+  Both functions are intended for use in pipes.
 }
