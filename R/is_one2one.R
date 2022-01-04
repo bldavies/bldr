@@ -8,6 +8,6 @@
 #'   Default is TRUE.
 #'
 #' @export
-is_one2one = function(x, y, na.rm = T) {
+is_one2one <- function(x, y, na.rm = T) {
   is_many2one(x, y, na.rm) & is_many2one(y, x, na.rm)
 }

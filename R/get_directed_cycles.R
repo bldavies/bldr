@@ -27,8 +27,8 @@ get_directed_cycles <- function(G) {
   })
 
   res <- lapply(cycles, function(x) {
-    x = as.vector(x)
-    k = which.min(x)
+    x <- as.vector(x)
+    k <- which.min(x)
     if (k == 1) {
       x
     } else {
