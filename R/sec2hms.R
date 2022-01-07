@@ -17,12 +17,17 @@
 #'
 #' @export
 sec2hms <- function(x, nearest = T) {
+  if (nearest) {
+    x <- round(x)
+  } else {
+    x <- floor(x)
+  }
   h <- floor(x / 3600)
   m <- floor((x - h * 3600) / 60)
   if (nearest) {
-    s <- round(x) %% 60
+    s <- x %% 60
   } else {
-    s <- floor(x) %% 60
+    s <- x %% 60
   }
   ifelse(h > 0, sprintf('%d:%.2d:%.2d', h, m, s), sprintf('%d:%.2d', m, s))
 }
