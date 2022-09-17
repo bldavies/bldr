@@ -7,6 +7,9 @@ set_ggtheme <- function() {
   ggplot2::theme_set(
     ggplot2::theme_minimal() +
       ggplot2::theme(
+        legend.title = ggplot2::element_text(
+          size = 10
+        ),
         panel.grid.minor = ggplot2::element_blank(),
         plot.title = ggplot2::element_text(
           face = "bold"
