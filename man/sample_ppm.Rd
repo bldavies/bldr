@@ -22,3 +22,7 @@ An igraph graph.
 \code{sample_ppm} generates a random graph using the planted partition model,
   which is a special case of the stochastic block model.
 }
+\details{
+See \href{https://bldavies.com/blog/generating-random-graphs-communities}{my blog post}
+  for more information.
+}

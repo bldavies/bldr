@@ -3,6 +3,9 @@
 #' \code{sample_ppm} generates a random graph using the planted partition model,
 #'   which is a special case of the stochastic block model.
 #'
+#' See \href{https://bldavies.com/blog/generating-random-graphs-communities}{my blog post}
+#'   for more information.
+#'
 #' @param memb Vector of community memberships.
 #' @param p Probability that vertices in same community are adjacent.
 #' @param q Probability that vertices in different communities are adjacent.
